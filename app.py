@@ -1,8 +1,7 @@
 import streamlit as st
 import requests
 
-# 👉 Las claves se almacenan como secretos en Streamlit Cloud
-GROQ_API_KEY = st.secrets["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"]
+GROQ_API_KEY = st.secrets["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"]
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="Generador SEO + Imagen", page_icon="🧠")
@@ -14,7 +13,6 @@ length = st.slider("📏 Longitud del artículo (palabras)", 100, 1000, 300)
 
 if st.button("🚀 Generar contenido"):
     with st.spinner("Generando artículo..."):
-
         prompt = (
             f"Eres un redactor SEO experto. Escribe un artículo de {length} palabras, estilo {style}, "
             f"usando la palabra clave principal: '{keyword}'. Usa subtítulos, sinónimos y palabras relacionadas."
