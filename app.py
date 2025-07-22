@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 
 GROQ_API_KEY = st.secrets["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"]
+
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="Generador SEO + Imagen", page_icon="🧠")
