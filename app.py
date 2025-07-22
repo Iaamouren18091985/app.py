@@ -25,11 +25,11 @@ if st.button("🚀 Generar artículo"):
         }
 
         payload = {
-            "model": "mixtral-16x7b-32768",  # Asegúrate de usar un modelo activo
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.7,
-            "max_tokens": 2048
-        }
+    "model": "mixtral-8x7b-16384",
+    "messages": [{"role": "user", "content": prompt}],
+    "temperature": 0.7,
+    "max_tokens": 2048
+}
 
         response = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
