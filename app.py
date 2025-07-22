@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # 👉 Las claves se almacenan como secretos en Streamlit Cloud
-GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+GROQ_API_KEY = st.secrets["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"]
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="Generador SEO + Imagen", page_icon="🧠")
