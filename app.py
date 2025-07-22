@@ -25,11 +25,11 @@ if st.button("🚀 Generar artículo"):
         }
 
        payload = {
-    "model": "mixtral-16x7b-32768",  # ejemplo de modelo activo, cambia según doc
-    "messages": [{"role": "user", "content": prompt}],
-    "temperature": 0.7,
-    "max_tokens": 2048
-}
+           "model": "mixtral-16x7b-32768",  # ejemplo de modelo activo, cambia según doc
+           "messages": [{"role": "user", "content": prompt}],
+           "temperature": 0.7,
+         "max_tokens": 2048
+         }
 
 
         }
