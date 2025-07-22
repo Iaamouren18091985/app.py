@@ -14,7 +14,7 @@ length = st.slider("📏 Longitud del artículo (palabras)", 100, 1000, 300)
 if st.button("🚀 Generar artículo"):
     with st.spinner("Generando artículo..."):
         headers = {
-            "Authorization": f"Bearer {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}"
+            "Authorization"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"
         }
 
         prompt = (
