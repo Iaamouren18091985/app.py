@@ -31,6 +31,7 @@ if st.button("🚀 Generar artículo"):
     "max_tokens": 2048
 }
 
+
         }
 
         response = requests.post(
