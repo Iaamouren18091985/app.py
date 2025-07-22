@@ -20,22 +20,18 @@ if st.button("🚀 Generar artículo"):
         )
 
         headers = {
-            "Authorization": f"Bearer {GROQ_API_KEY}",
-            "Content-Type": "application/json"
-        }
-
-        payload = {
-    "model": "mixtral-8x7b-16384",
-    "messages": [{"role": "user", "content": prompt}],
-    "temperature": 0.7,
-    "max_tokens": 2048
+    "Authorization": f"Bearer {st.secrets['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']}"
 }
 
-        response = requests.post(
-            "https://api.groq.com/openai/v1/chat/completions",
-            headers=headers,
-            json=payload
-        )
+payload = {
+    "inputs": "Escribe un artículo sobre inteligencia artificial."
+}
+
+response = requests.post(
+    "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1",
+    headers=headers,
+    json=payload
+)
 
         if response.status_code == 200:
             content = response.json()["choices"][0]["message"]["content"]
