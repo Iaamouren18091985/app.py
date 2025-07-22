@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Clave API de Groq almacenada en secretos
-GROQ_API_KEY = st.secrets["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"]
+GROQ_API_KEY = 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
 
 st.set_page_config(page_title="Generador SEO con Groq", page_icon="🧠")
 st.title("🧠 Generador de Artículos SEO usando Groq (sin OpenAI)")
